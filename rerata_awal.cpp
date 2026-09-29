@@ -9,14 +9,14 @@ int main() {
     int uas = 90;
 
     // TODO 1: hitung jumlah ketiga nilai. Di C++ tipe variabel wajib ditulis.
-    int jumlah = 0;
+    int jumlah = tugas + uts + uas; //variabel interger untuk pada jumlah  pada nilai uts,uas,tugas
 
     // TODO 2: hitung rata-rata. Ingat, int dibagi int membuang pecahannya.
     //         Pakai tipe double dan pastikan pembagiannya bukan pembagian bilangan bulat.
-    double rerata = 0;
+    double rerata = jumlah / 3.0;
 
     // TODO 3: cetak hasil dengan dua angka di belakang koma, sama seperti versi Python.
     std::cout << "Jumlah    : " << jumlah << "\n";
-    std::cout << "Rata-rata : " << rerata << "\n";
+    std::cout << "Rata-rata : " << std::fixed << std::setprecision(2) << rerata << "\n";
     return 0;
 }

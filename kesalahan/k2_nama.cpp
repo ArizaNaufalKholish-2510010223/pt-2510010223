@@ -4,7 +4,8 @@
 #include <iostream>
 
 int main() {
-    int nilai = 80;
+    int Nilai = 80;
+    int bonus = 10;
     std::cout << "Nilai: " << Nilai << "\n";
     std::cout << "Bonus: " << bonus << "\n";
     return 0;

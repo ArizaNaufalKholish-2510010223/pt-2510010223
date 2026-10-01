@@ -7,9 +7,11 @@ int main() {
     int tugas = 80;
     int uts = 75;
     int uas = 90;
+    int kehadiran = 30;
+    int latihan = 40;
 
     // TODO 1: hitung jumlah ketiga nilai. Di C++ tipe variabel wajib ditulis.
-    int jumlah = tugas + uts + uas; //variabel interger untuk pada jumlah  pada nilai uts,uas,tugas
+    int jumlah = tugas + uts + uas + kehadiran + latihan; //variabel interger untuk pada jumlah  pada nilai uts,uas,tugas
 
     // TODO 2: hitung rata-rata. Ingat, int dibagi int membuang pecahannya.
     //         Pakai tipe double dan pastikan pembagiannya bukan pembagian bilangan bulat.

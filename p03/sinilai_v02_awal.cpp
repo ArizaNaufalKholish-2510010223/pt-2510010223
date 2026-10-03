@@ -53,7 +53,7 @@ int main() {
     cout << "NPM         : " << npm << "\n";
     cout << "Nilai Akhir : " << nilai_akhir << "\n";
     cout << "Rerata Polos: " << rerata_polos << "\n";
-    cout << "selisih = " << selisih << "\n";
+    cout << "Selisih     : " << selisih << "\n";
 
     // TODO 4: tampilkan nilai_akhir dan rerata_polos, sejajar dengan baris di atas.
 

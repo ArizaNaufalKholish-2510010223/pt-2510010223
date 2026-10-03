@@ -33,4 +33,6 @@ Folder `p03` di repository `pt-NPM` berisi `sinilai_v02.cpp` dan  `README.md`. L
 
 ## Deklarasi AI
 
+Pengerjaan soal yang ada tidak ada memakai Ai apapun kecuali pas ngepush kegithub karena masih kurang mengertia kan ngepush github
+
 Tuliskan AI yang digunakan, prompt, dan umpan balik AI

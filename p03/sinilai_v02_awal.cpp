@@ -37,7 +37,7 @@ int main() {
     cin >> uas;
 
     // TODO 2: hitung nilai akhir dengan formula di atas. Simpan ke variabel double nilai_akhir.
-    double nilai_akhir = (kehadiran * BOBOT_KEHADIRAN) + (mingguan * BOBOT_MINGGUAN) + (uts * BOBOT_UTS) + (uas * BOBOT_UAS);
+    double nilai_akhir = kehadiran * BOBOT_KEHADIRAN + mingguan * BOBOT_MINGGUAN + uts * BOBOT_UTS + uas * BOBOT_UAS;
     cout << "nilai_akhir = " << nilai_akhir << "\n";
 
     // TODO 3: hitung juga rata-rata sederhana keempat komponen (tanpa bobot), simpan ke rerata_polos.

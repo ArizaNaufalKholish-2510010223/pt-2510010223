@@ -256,5 +256,7 @@ dari yang ada default masih perlu untuk pengeluaran terakhir jika tidak ada pili
 
 
 ## Deklarasi AI
+Menggunakan A1:
+saya menggunakan ai untuk  kkonsultasi apakah jawaban saya benar atau salah, dan jika ada salah saya cari masalah itu sendiri atau nanya dan mencari contoh code di google dan melihat bisa dlakukan seperti apa, dan saya menggunakn ai untuk push github, karena saya masih agak bingung digithub
 
 Tuliskan AI yang digunakan, prompt, dan umpan balik AI

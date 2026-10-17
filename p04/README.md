@@ -259,6 +259,44 @@ dari yang ada default masih perlu untuk pengeluaran terakhir jika tidak ada pili
 Menggunakan A1:
 saya menggunakan chat gpt untuk  kkonsultasi apakah jawaban saya benar atau salah, dan jika ada salah saya cari masalah itu sendiri atau nanya dan mencari contoh code di google dan melihat bisa dlakukan seperti apa, dan saya menggunakn ai untuk push github, karena saya masih agak bingung digithub
 
+prompt dan jawaban:
 
+perbaiki kalo ada yg salah
+
+Ada yang perlu diperbaiki, terutama jalur saat Nilai3 paling besar dan saat ada angka yang sama.
+Pada gambarmu:
+- Baca Nilai sebaiknya diperjelas menjadi Baca Nilai1, Nilai2, Nilai3.
+- Belum ada keluaran Cetak Nilai3.
+- Angka yang sama bukan berarti input salah. Contohnya 8, 8, 5 tetap menghasilkan nilai terbesar 8.
+- Semua keluaran harus punya panah menuju Selesai.
+Biar lebih sederhana, perbaiki alurnya menjadi seperti ini. Pakai >= supaya angka yang sama tetap tertangani.
+
+cara push github
+Di VS Code, buka terminal Git Bash, lalu pastikan kamu berada di folder P04_Percabangan yang berisi semua tugas tadi.
+
+1. Cek apakah foldernya sudah terhubung ke repository:
+
+git status
+git remote -v
+
+Kalau muncul repository pt-2510010223, lanjut. Kalau muncul not a git repository atau repository berbeda, kirim hasilnya dulu.
+
+2. Kalau folder P04_Percabangan berada di dalam repository tersebut, jalankan dari folder itu:
+
+git branch --show-current
+
+Pastikan hasilnya main, kemudian:
+
+git add -- '*.cpp' '*.jpg' '*.jpeg' '*.png' README.md
+git diff --cached --name-only
+
+Perintah terakhir menampilkan daftar berkas yang akan dikirim. Pastikan isinya hanya tugas P04 yang kamu inginkan.
+
+3. Simpan perubahan dan kirim:
+
+git commit -m "Pertemuan 4: SiNilai v0.3 dan latihan mandiri"
+git push origin main
+
+Catatan: modul meminta nama folder di GitHub p04. Perintah push mengikuti susunan folder yang sudah ada; tidak otomatis mengubah P04_Percabangan menjadi p04.
 
 Tuliskan AI yang digunakan, prompt, dan umpan balik AI

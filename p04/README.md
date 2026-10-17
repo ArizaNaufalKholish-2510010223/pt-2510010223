@@ -53,7 +53,7 @@ Terima kasih.
 
 bedanya <= dan <, jika dia memakai <= nilai 60 yang akan menghasilan "Peringatan: nilai di bawah 60, segera konsultasi". karena hasilnya menjadi true dan menampilkan teks yang ada, dan jika hasilnya tidak maka akan menampilkan terima kasih. jadi karena hasilnya harus kurang dari 60 untuk menampilakn hasil true yang ada, maka harus menggunakan ">"
 
-3.Hapus kurung kurawal { } pada if, bangun, jalankan dengan 75. Baris Terima kasih tetap tampil,
+3. Hapus kurung kurawal { } pada if, bangun, jalankan dengan 75. Baris Terima kasih tetap tampil,
 tetapi coba tambahkan satu cout lagi di dalam bekas blok itu dan lihat kejutannya. Kembalikan
 kurungnya.
 
@@ -80,7 +80,7 @@ Lulus
 Nilai akhir: 59.9
 Belum 
 
-2.Sengaja tulis if (nilai_akhir = 60) dengan satu tanda sama dengan. Bangun, baca warningnya, jalankan dengan 30, dan amati hasilnya yang selalu Lulus. Kembalikan ke == atau >=.
+2. Sengaja tulis if (nilai_akhir = 60) dengan satu tanda sama dengan. Bangun, baca warningnya, jalankan dengan 30, dan amati hasilnya yang selalu Lulus. Kembalikan ke == atau >=.
 
 if_else.cpp: In function 'int main()':
 if_else.cpp:11:21: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
@@ -154,7 +154,7 @@ Presensi (0-100)          : 65
 Tugas dikumpulkan? (1/0)  : 0
 Tidak boleh: presensi kurang dan tugas belum lengkap.
 
-2.Ganti && pada syarat pertama menjadi ||. Jalankan (65, 1). Sekarang "boleh UAS" padahal
+2. Ganti && pada syarat pertama menjadi ||. Jalankan (65, 1). Sekarang "boleh UAS" padahal
 presensinya kurang. Kembalikan ke &&.
 
 Presensi (0-100)          : 65

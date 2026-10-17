@@ -40,7 +40,6 @@ Belum lulus
 Peringatan: nilai di bawah 60, segera konsultasi.
 Terima kasih.
 
-
 Nilai akhir: 60
 Terima kasih.
 
@@ -49,15 +48,23 @@ Belum lulus
 Peringatan: nilai di bawah 60, segera konsultasi.
 Terima kasih.
 
+2. Ubah < menjadi <=. Jalankan lagi dengan 60. Apa bedanya, dan mana yang sesuai kontrak (lulus bila
+60 ke atas)?
 
-
-bedanya jika nilai 60 maka hasilnya, Peringatan: nilai di bawah 60, segera konsultasi. karena hasilnya menjadi true dan menampilkan teks yang ada, dan jika hasilnya tidak maka akan menampilkan terima kasih. jadi karena hasilnya harus kurang dari 60 untuk menampilakn hasil true yang ada, maka harus menggunakan ">"
+bedanya <= dan <, jika dia memakai <= nilai 60 yang akan menghasilan "Peringatan: nilai di bawah 60, segera konsultasi". karena hasilnya menjadi true dan menampilkan teks yang ada, dan jika hasilnya tidak maka akan menampilkan terima kasih. jadi karena hasilnya harus kurang dari 60 untuk menampilakn hasil true yang ada, maka harus menggunakan ">"
 
 3.Hapus kurung kurawal { } pada if, bangun, jalankan dengan 75. Baris Terima kasih tetap tampil,
 tetapi coba tambahkan satu cout lagi di dalam bekas blok itu dan lihat kejutannya. Kembalikan
 kurungnya.
 
 $ g++ -std=c++20 -Wall -Wextra -Wpedantic -g "if_dasar.cpp" -o "if_dasar.exe" && "./if_dasar.exe"
+if_dasar.cpp: In function 'int main()':
+if_dasar.cpp:11:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   11 |     if (nilai_akhir <= 60)
+      |     ^~
+if_dasar.cpp:13:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   13 |         cout << "Peringatan: nilai di bawah 60, segera konsultasi.\n";
+      |         ^~~~
 Nilai akhir: 57
 Belum lulus
 Peringatan: nilai di bawah 60, segera konsultasi.
@@ -167,8 +174,7 @@ Pertemuan 3 dan ==.
         cout << "Tidak boleh: tugas belum dikumpulkan.\n";
     }
     if (tugas_dikumpulkan % 2 == 0) {
-        cout << "Tugas dikumpulkan genap.\n";
-    }
+        cout << "Tugas dikumpulkan genap.\n";}
 
 Presensi (0-100)          : 4 
 Tugas dikumpulkan? (1/0)  : 2

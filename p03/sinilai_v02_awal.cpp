@@ -56,6 +56,7 @@ int main() {
     cout << "Selisih     : " << selisih << "\n";
 
     // TODO 4: tampilkan nilai_akhir dan rerata_polos, sejajar dengan baris di atas.
+    // Kapan keduanya sama persis? saat nilai yang bobot dan tidak bobot sama, disaat itu hasilnya akan sama
 
     return 0;
 }

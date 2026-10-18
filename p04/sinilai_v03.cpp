@@ -109,7 +109,8 @@ int main() {
     cout << "Nilai akhir : " << nilai_akhir << "\n";
     cout << "Huruf mutu   : " << huruf_mutu << "\n";
     cout << "Keterangan  : " << keterangan << "\n";
-    bool Lulus = nilai_akhir >= 60;
+
+    
     if (Lulus) {
         cout << "Status    : Lulus\n";
     } else {

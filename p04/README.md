@@ -32,7 +32,7 @@ di modul (Gambar 2 sampai 7); baca gambarnya dulu, baru kodenya.
 Folder `p04` di repository `pt-NPM` berisi `sinilai_v03.cpp` dan  `README.md`. Lihat Modul Pertemuan 4 bagian E.
 
 
-# Praktikum 1: if Satu Cabang
+Praktikum 1: if Satu Cabang
 
 1. Baca dulu Gambar 2 dengan jari, lalu bangun if_dasar.cpp. Jalankan tiga kali: 55, 60, dan 59.9.
 Nilai akhir: 55
@@ -70,7 +70,7 @@ Belum lulus
 Peringatan: nilai di bawah 60, segera konsultasi.
 Terima kasih.
 
-# Praktikum 2: if-else
+Praktikum 2: if-else
 1. Bangun if_else.cpp, uji dengan 60 dan 59.9. Cocokkan dengan Gambar 3: jalan mana yang
 ditempuh masing-masing?
 
@@ -88,7 +88,7 @@ if_else.cpp:11:21: warning: suggest parentheses around assignment used as truth 
 Nilai akhir: 30
 Lulus
 
-# Praktikum 3: Urutan Syarat pada if-else Bertingkat
+Praktikum 3: Urutan Syarat pada if-else Bertingkat
 1. Bangun bertingkat.cpp. Uji dengan 80, 79.9, 70, 69.9, 60, 59.9. Ikuti setiap angka di Gambar 4.
 
 Nilai akhir: 80
@@ -133,7 +133,7 @@ tetap benar?
     }
     return 0;
 
-# Praktikum 4: Empat Kombinasi Operator Logika
+Praktikum 4: Empat Kombinasi Operator Logika
 1. Bangun logika.cpp. Ada dua masukan, masing-masing bisa cukup atau tidak, jadi ada empat
 kombinasi: (80, 1), (80, 0), (65, 1), (65, 0). Jalankan keempatnya, catat pesan yang muncul, dan
 tandai jalannya di Gambar 5.
@@ -181,7 +181,7 @@ Tugas dikumpulkan? (1/0)  : 2
 Tidak boleh: presensi kurang dan tugas belum lengkap.
 Tugas dikumpulkan genap.
 
-# Praktikum 5: switch dan break yang Hilang
+Praktikum 5: switch dan break yang Hilang
 1. Hapus semua break;, bangun ulang, baca warning may fall through, lalu jalankan dengan 1.
 Keempat pesan tampil. Kembalikan break-nya.
 
@@ -251,6 +251,30 @@ Tentang Program
 
 dari yang ada default masih perlu untuk pengeluaran terakhir jika tidak ada pilihan yang terpilih maka default yang akan terpilih
 
+## Latihan Mandiri
+1. Gambar flowchart lengkap TODO 1 (tujuh tingkat huruf mutu) di kertas, foto, dan simpan bersama kodemu.
+Bandingkan dengan Gambar 4: apa yang berulang?
+
+Jawab:
+
+gambar flowchar todo 1 dan gambar empat yang berulang adalah pengecekan kondisi menggunaakn ya dan tidak, yang dimana dia memakai if,else elif, else
+yang dimana kita bandingkan di gambar 4 dan gambar flowchart TODO 1
+MEMILIKI SAMA HAL >=80,70,60. 
+
+4. Ubah switch_menu.cpp supaya pilihan dibaca sebagai char ('1', '2', '3') dan tambahkan kasus 'k'
+untuk keluar. Apa yang berubah pada case?
+
+Jawab: 
+Karena dia char jadi, dia menggunakan tipe data char menjadi "char pilihan;"
+karena itu pada penggunaan case dia memakai '1','2' dll. dan juga karena disuruh keluaran memakai k maka tinggal tambah dibawah 3 pada inputan  untuk penambahan pilihan menjadi :
+    case '3':
+    case 'k':
+    cout << "Sampai jumpa.\n";
+
+5.Tuliskan ulang bertingkat.cpp memakai switch pada static_cast<int>(nilai) / 10. Apakah
+hasilnya persis sama untuk 79.9? Jelaskan.
+
+tetap sama persis hasilnya tetap b karena masih bawah 80 kalo pake if tadi dia kan memakai >=80 sedangkan case 80 hanya memilih 80 puluh atau lebih
 
 
 

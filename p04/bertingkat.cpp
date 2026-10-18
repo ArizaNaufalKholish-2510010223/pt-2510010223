@@ -10,11 +10,6 @@ int main() {
     cout << "Masukkan nilai (0-100): ";
     cin >> nilai;
 
-    if (nilai < 0 || nilai > 100) {
-        cout << "Nilai tidak valid.\n";
-        return 0;
-    }
-
     switch (static_cast<int>(nilai) / 10) {
         case 10:
         case 9:
@@ -27,11 +22,8 @@ int main() {
         case 6:
             cout << "Huruf mutu: C\n";
             break;
-        case 5:
-            cout << "Huruf mutu: D\n";
-            break;
         default:
-            cout << "Huruf mutu: E\n";
+            cout << "Huruf mutu: D\n";
     }
 
     return 0;

@@ -26,7 +26,6 @@ int main() {
         case '3':
         case 'k':
             cout << "Sampai jumpa.\n";
-            exit(0);
             break;
         case '4':
             cout << "Tentang Program\n";

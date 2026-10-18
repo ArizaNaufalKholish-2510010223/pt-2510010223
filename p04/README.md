@@ -271,7 +271,7 @@ karena itu pada penggunaan case dia memakai '1','2' dll. dan juga karena disuruh
     case 'k':
     cout << "Sampai jumpa.\n";
 
-5.Tuliskan ulang bertingkat.cpp memakai switch pada static_cast<int>(nilai) / 10. Apakah
+5. Tuliskan ulang bertingkat.cpp memakai switch pada static_cast<int>(nilai) / 10. Apakah
 hasilnya persis sama untuk 79.9? Jelaskan.
 
 tetap sama persis hasilnya tetap b karena masih bawah 80 kalo pake if tadi dia kan memakai >=80 sedangkan case 80 hanya memilih 80 puluh atau lebih

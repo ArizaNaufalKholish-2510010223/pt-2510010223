@@ -111,7 +111,7 @@ int main() {
     cout << "Keterangan  : " << keterangan << "\n";
 
     
-    if (Lulus) {
+    if (lulus) {
         cout << "Status    : Lulus\n";
     } else {
         cout << "Status    : Belum lulus\n";

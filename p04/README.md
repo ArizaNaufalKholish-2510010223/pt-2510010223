@@ -281,7 +281,7 @@ tetap sama persis hasilnya tetap b karena masih bawah 80 kalo pake if tadi dia k
 
 ## Deklarasi AI
 Menggunakan A1:
-saya menggunakan chat gpt untuk  kkonsultasi apakah jawaban saya benar atau salah, dan jika ada salah saya cari masalah itu sendiri atau nanya dan mencari contoh code di google dan melihat bisa dlakukan seperti apa, dan saya menggunakn ai untuk push github, karena saya masih agak bingung digithub
+saya menggunakan chat gpt untuk konsultasi apakah jawaban saya benar atau salah, dan jika ada salah saya cari masalah itu sendiri atau nanya dan mencari contoh code di google dan melihat bisa dlakukan seperti apa, dan saya menggunakn ai untuk push github, karena saya masih agak bingung digithub
 
 prompt dan jawaban:
 

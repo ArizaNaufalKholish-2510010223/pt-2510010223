@@ -52,6 +52,8 @@ Jawaban :
 
 Nilai awal tertinggi adalah -1, jika sentinel-nya angka negatif dan nilai yang dihitung mulai dari 0.
 
+![Flowchart Perkalian](flowchart_perkalian.png)
+
 
 
 ## Deklarasi AI

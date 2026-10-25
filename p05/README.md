@@ -39,7 +39,7 @@ Folder `p05` di repository `pt-NPM` berisi `sinilai_v04.cpp`. Lihat Modul Pertem
 ## Latihan Mandiri
 
 1. ### Flowchart Penjumlahan
-![Flowchart Penjumlahan](Flowchart_jumlah.jpeg)
+![Flowchart Penjumlahan](latihan_mandiri/Flowchart_jumlah.jpeg)
 
 2. Tulis program yang mencetak hitung mundur dari n sampai 1, lalu "Mulai!". Bagian langkah kepala for yang
 mana yang berubah?
@@ -56,7 +56,7 @@ Jawaban :
 Nilai awal tertinggi adalah -1, jika sentinel-nya angka negatif dan nilai yang dihitung mulai dari 0.
 
 5. ### Flowchart Perkalian
-![Flowchart Perkalian](Flowchart_perkalian.jpeg)
+![Flowchart Perkalian](latihan_mandiri/Flowchart_perkalian.jpeg)
 
 
 

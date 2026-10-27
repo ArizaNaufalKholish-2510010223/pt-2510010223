@@ -17,7 +17,7 @@ int main() {
     // TODO 1: bungkus dua baris di bawah dengan do-while supaya pertanyaan diulang
     //         selama jumlah_mahasiswa < 1. Badan harus jalan paling sedikit sekali.
 
-    do{
+    do {
         cout << "Jumlah mahasiswa (paling sedikit 1): ";
         cin >> jumlah_mahasiswa;
     } while (jumlah_mahasiswa < 1);

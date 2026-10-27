@@ -18,13 +18,9 @@ int main() {
     //         selama jumlah_mahasiswa < 1. Badan harus jalan paling sedikit sekali.
 
     do{
-    cout << "Jumlah mahasiswa (paling sedikit 1): ";
-    cin >> jumlah_mahasiswa;
+        cout << "Jumlah mahasiswa (paling sedikit 1): ";
+        cin >> jumlah_mahasiswa;
     } while (jumlah_mahasiswa < 1);
-
-
-
-
     // TODO 2: deklarasikan dua akumulator di sini, sebelum perulangan dimulai:
     //         double total_nilai = 0; dan int jumlah_lulus = 0;
     double total_nilai = 0;
@@ -38,9 +34,6 @@ int main() {
         double uts = 0;
         double uas = 0;
         
-
-
-
         cout << "\n--- Mahasiswa ke-" << i << " dari " << jumlah_mahasiswa << " ---\n";
         cout << "Nama      : ";
         getline(cin >> ws, nama);   // cin >> ws membuang sisa Enter dari angka sebelumnya

@@ -84,9 +84,64 @@ Bagian Debugger di README itu menjelaskan pengaturan agar F5 bisa menjalankan de
 apakah sudah benar sinilai saya?
 
 ### Umpan Balik
+Ya, logika SiNilai v0.5 kamu sudah benar dan TODO 1–9 sudah terpenuhi, termasuk:
+- Dua angka desimal dan keluaran berkolom.
+- Penghitung A–E memakai switch.
+- Pembaruan nilai dan nama tertinggi tanpa break.
+- Sebaran # memakai perulangan bersarang.
+Pastikan simbol format chat tidak ikut masuk ke VS Code. Penulisannya harus:
+#include <iomanip>
+#include <iostream>
+#include <string>
 
+string nama_tertinggi;
+string nama;
+string npm;
+string huruf_mutu;
 
+Bukan *string*, dan perkalian menggunakan * tanpa \.
 
+Untuk mengikuti contoh TODO 9 di modul secara persis, bagian ini bisa ditulis:
 
+### Prompt
+saya mau push berikan saya arahan
+yang mana yang dipush sinilai dan readme
+sisanya seperti segitigabintang,rata-rata, bilanganprima,tabel_konversi, masuk ke folder Latihan Mandiri
 
+### Umpan Balik
+Iya, susun di repo lokal pt-2510010223 seperti ini. Gunakan nama folder latihan_mandiri agar konsisten dengan p05:
+p06/
+├── sinilai_v05.cpp
+├── contoh_masukan.txt
+├── README.md
+└── latihan_mandiri/
+    ├── segitigabintang.cpp
+    ├── rata-rata.cpp
+    ├── bilanganprima.cpp
+    └── tabel_konversi.cpp
+
+contoh_masukan.txt juga ikut dikumpulkan sesuai modul. File .exe dan tempCodeRunnerFile.cpp tidak perlu dipush.
+1. Di File Explorer, buka folder repo pt-2510010223 yang berisi p01 sampai p05.
+2. Buat folder p06, lalu buat latihan_mandiri di dalamnya.
+3. Salin file sesuai susunan di atas. Ubah nama sinilai_v05_awal.cpp menjadi sinilai_v05.cpp.
+4. Edit dan simpan README lewat VS Code. Jika README memuat perintah menjalankan program, sesuaikan namanya menjadi sinilai_v05.
+5. Buka Git Bash di folder repo pt-2510010223, lalu jalankan satu per satu:
+git status
+
+git add p06/sinilai_v05.cpp p06/contoh_masukan.txt p06/README.md
+
+git add p06/latihan_mandiri/*.cpp
+
+Periksa daftar file yang akan dikirim:
+git diff --cached --name-only
+
+Jika sudah sesuai susunan tadi, lanjutkan:
+git commit -m "Pertemuan 6: SiNilai v0.5 dan latihan mandiri"
+
+git push origin main
+
+Terakhir, cek:
+git status
+
+Pastikan terminal berada di repo pt-2510010223, bukan hanya folder bahan pestruk. Semua langkah ini dikerjakan dari komputer, sesuai ketentuan dosen.
 Tuliskan AI yang digunakan, prompt, dan umpan balik AI

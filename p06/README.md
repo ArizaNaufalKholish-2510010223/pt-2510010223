@@ -46,6 +46,10 @@ Di Linux hapus akhiran `.exe` dan ganti `miDebuggerPath` menjadi `/usr/bin/gdb`;
 
 Folder `p06` di repository `pt-NPM` berisi `sinilai_v05.cpp`. Lihat Modul Pertemuan 6 bagian E.
 
+## Latihan Mandiri 1 - Flowchart segita bintang
+
+![Flowchart segitiga bintang](latihan_mandiri/flowchart_segitigabintang.jpeg)
+
 ## Latihan Mandiri 5 — Penelusuran Nilai Tertinggi
 
 Awalnya nilai_tertinggi = -1 dan nama_tertinggi kosong.

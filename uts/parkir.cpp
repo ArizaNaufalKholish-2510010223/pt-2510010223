@@ -33,9 +33,10 @@ int main() {
     int total = 0;
     int banyak_motor = 0;
     int banyak_mobil = 0;
+
+    // TODO 5a: deklarasikan penampung biaya tertinggi (mulai -1) dan plat pemiliknya.
     int biaya_tertinggi = -1;
     string plat_tertinggi;
-    // TODO 5a: deklarasikan penampung biaya tertinggi (mulai -1) dan plat pemiliknya.
 
     for (int i = 1; i <= jumlah; i++) {
         string plat;
@@ -43,7 +44,6 @@ int main() {
         int durasi = 0;
 
         cout << "\n--- Kendaraan ke-" << i << " dari " << jumlah << " ---\n";
-
 
         // TODO 1: baca plat dengan getline sampai sah (tidak kosong dan bukan hanya spasi),
         //         lalu ubah semua hurufnya menjadi huruf besar. Pesan penolakan: "Plat tidak boleh kosong."
@@ -53,11 +53,11 @@ int main() {
             cout << "Plat nomor : ";
             getline(cin, plat);
 
-            int panjang = static_cast<int>(plat.length());
+            int panjang = plat.length();
             bool ada_isi = false;
 
             for (int j = 0; j < panjang; j++) {
-                if (!isspace(static_cast<unsigned char>(plat[j]))) {
+                if (plat[j] != ' ') {
                     ada_isi = true;
                 }
             }
@@ -69,28 +69,22 @@ int main() {
             }
         } while (!sah);
 
-        int panjang = static_cast<int>(plat.length());
+        int panjang = plat.length();
 
         for (int j = 0; j < panjang; j++) {
-            plat[j] = static_cast<char>(
-                toupper(static_cast<unsigned char>(plat[j]))
-            );
+            plat[j] = toupper(plat[j]);
         }
+
         // TODO 2: baca jenis (char), jadikan huruf besar, ulangi selama bukan 'M' atau 'R'.
         //         Pesan penolakan: "Hanya M (motor) atau R (roda empat). Jenis (M/R): "
-
         cout << "Jenis (M/R): ";
         cin >> jenis;
-        jenis = static_cast<char>(
-            toupper(static_cast<unsigned char>(jenis))
-        );
+        jenis = toupper(jenis);
 
         while (jenis != 'M' && jenis != 'R') {
             cout << "Hanya M (motor) atau R (roda empat). Jenis (M/R): ";
             cin >> jenis;
-            jenis = static_cast<char>(
-                toupper(static_cast<unsigned char>(jenis))
-            );
+            jenis = toupper(jenis);
         }
 
         // TODO 3: baca durasi dengan aman (bilangan bulat 1 sampai 24), pola seperti jumlah di atas.
@@ -110,6 +104,7 @@ int main() {
         //         Tambah banyak_motor atau banyak_mobil.
         int biaya = 0;
         string nama_jenis;
+
         if (jenis == 'M') {
             nama_jenis = "Motor";
             biaya = TARIF_AWAL_MOTOR + (durasi - 1) * TARIF_LANJUT_MOTOR;
@@ -130,7 +125,6 @@ int main() {
             banyak_mobil++;
         }
 
-
         cout << "  " << left << setw(12) << plat << setw(8) << nama_jenis
              << right << setw(4) << durasi << " jam" << setw(9) << biaya << "\n";
 
@@ -141,6 +135,7 @@ int main() {
             plat_tertinggi = plat;
         }
     }
+
     cout << "\n=== Rekap Hari Ini ===\n";
     cout << "Jumlah kendaraan : " << jumlah << "\n";
     cout << "Motor            : " << banyak_motor << "\n";
@@ -150,6 +145,10 @@ int main() {
     // TODO 5c: cetak "Tertinggi        : " diikuti plat dan biaya tertinggi dalam kurung.
     cout << "Tertinggi        : " << plat_tertinggi
          << " (" << biaya_tertinggi << ")\n";
+
+    // TODO 6: dua baris batang, satu untuk Motor dan satu untuk Mobil, memakai perulangan bersarang:
+    //         perulangan luar memilih label dan jumlahnya, perulangan dalam mencetak tanda # sebanyak itu.
+    //         Format tiap baris: label rata kiri selebar 6, lalu "| ", batang, spasi, jumlah. Contoh: "Motor | ## 2"
 
     cout << "\nSebaran jenis:\n";
     for (int i = 1; i <= 2; i++) {
@@ -172,10 +171,6 @@ int main() {
 
         cout << ' ' << jumlah_jenis << '\n';
     }
-
-    // TODO 6: dua baris batang, satu untuk Motor dan satu untuk Mobil, memakai perulangan bersarang:
-    //         perulangan luar memilih label dan jumlahnya, perulangan dalam mencetak tanda # sebanyak itu.
-    //         Format tiap baris: label rata kiri selebar 6, lalu "| ", batang, spasi, jumlah. Contoh: "Motor | ## 2"
 
     return 0;
 }

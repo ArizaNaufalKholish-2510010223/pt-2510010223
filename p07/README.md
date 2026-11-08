@@ -45,6 +45,6 @@ laporan kacau untuk `contoh_masukan.txt`: itulah yang harus kamu perbaiki.
 Folder `p07` di repository `pt-NPM` berisi `sinilai_v06.cpp`. Lihat Modul Pertemuan 7 bagian E.
 
 ## Deklarasi AI
-AI 0 semuanya dikumpul seadanya , dan untuk masalah saya kemarin
+AI 0 semuanya dikumpul seadanya , dan untuk masalah saya kemarin pada ngecommit github saya belajar dari website gitbash untuk melakukan git init, git add git commit. dan kenapa saya ga pake ai lagi karena soal di p07 sudah dipermudah bapa untuk pengerjaan nya karena dikasih contoh langsung gimana cara ngerjakan sinilai nya
 
 Tuliskan AI yang digunakan, prompt, dan umpan balik AI
